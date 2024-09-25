@@ -1,0 +1,53 @@
+<header>
+    <div class="header-info">
+        <div class="timeline">
+            <div class="background-image-overlay"></div>
+            <img class="background-image" src="images/cars.webp">
+        </div>
+
+        <section>
+            <div class="inner-content"> 
+                <div class="profile-row">
+                    <img class="profile-image" tabindex="0" src="images/profile.webp">
+    
+                    <div class="profile-data ">
+                        <h1 class="title">Mohammad's Virtual Showroom</h1>
+    
+                        <div class="second-row">
+                            <h3 class="subtitle">"From my Dealership to your Driveway - with Genuine Care"</h3>
+                            <a href="https://www.google.com/maps?q=51.1247142,-114.2067313&z=15&hl=en" class="location" target="_blank">
+                                <i class="icon-location"></i>
+                                Calgary
+                            </a>
+                        </div>
+    
+                        <div class="third-row contact-btn-group">
+                            <a mat-flat-button href="tel:14039718071" class="phone" matTooltip="1-403-971-8071">
+                                <i class="icon-phone"></i>
+                            </a>
+                            <a mat-flat-button href="mailto:mohammad@nwacura.com" class="email" matTooltip="mohammad@nwacura.com">
+                                <i class="icon-email-01"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bio">
+                    <p>
+                        Thanks for visiting my page! With 14+ years experience in the auto industry, I aim to build strong client relationships and offer tailored top-notch services
+                        @if (seeMore) {
+                            <span> ... </span>
+                        } @else { 
+                            , exceeding expectations to guarantee satis
+                        }
+                    </p>
+                    <span class="see-more" (click)="seeMore=!seeMore">
+                        {{(seeMore) ? 'See More' : 'See Less'}}
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <app-banner />
+</header>

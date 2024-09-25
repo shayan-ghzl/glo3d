@@ -1,0 +1,24 @@
+a.mdc-button {
+    --mat-filled-button-horizontal-padding: 0;
+}
+button.mdc-button[color="light"] {
+    --mdc-filled-button-container-color: #d3cccc;
+}
+
+.contact-btn-group {
+    --mdc-filled-button-container-height: 40px;
+    --mdc-filled-button-container-shape: 15px;
+    --font-icon-color: #fff;
+    --font-icon-font-size: 20px;
+
+    a.mdc-button {
+        min-width: 40px;
+    }
+    .phone {
+        background: linear-gradient(45deg, #3edf53, #14be0d);
+        margin-right: 8px;
+    }
+    .email {
+        background: linear-gradient(45deg, #17ccff, #229af0);
+    }
+}

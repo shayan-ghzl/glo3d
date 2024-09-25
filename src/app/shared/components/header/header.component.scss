@@ -1,0 +1,133 @@
+@use "../../../../../public/scss/environments" as env;
+@use "../../../../../public/scss/breakpoints" as brk;
+
+.timeline {
+    position: relative;
+    height: 400px;
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .background-image-overlay {
+        background: linear-gradient(180deg, #e5e5e500 49.88%, #eee);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}
+section {
+    position: relative;
+    width: env.$section-width;
+    margin: 0 auto;
+    height: 144px;
+
+    .inner-content {
+        position: absolute;
+        width: 100%;
+        top: -110%;
+        left: 0;
+    }
+}
+.profile-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+
+    .profile-image {
+        width: 210px;
+        height: 210px;
+        object-fit: cover;
+        border: 5px solid #053151;
+        border-radius: 40px;
+        box-shadow: 0 1px 6.5px #00000026;
+        cursor: pointer;
+    }
+    .profile-data {
+        flex-grow: 1;
+        padding-bottom: 4px;
+        --heading-margin-top: 0;
+        --heading-margin-bottom: 0;
+    }
+    .title {
+        --heading-font-weight: 500;
+    }
+    .subtitle {
+        --heading-font-weight: 400;
+    }
+}
+.second-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 20px;
+        transition: color 0.1s;
+        cursor: pointer;
+        --font-icon-font-size: 24px;
+
+        &:hover {
+            --font-icon-color: #0275d8;
+        }
+
+        i {
+            transition: color 0.1s;
+        }
+    }
+}
+.bio {
+    margin-top: 24px;
+    --paragraph-margin-bottom: 8px;
+
+    .see-more {
+        display: block;
+        color: #0000ee;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+// --------------------------------
+
+@include brk.mini-desktop() {
+    .timeline {
+        height: 300px;
+    }
+}
+@include brk.tablet() {
+    .timeline {
+        height: 250px;
+    }
+}
+@include brk.mini-tablet() {
+    .timeline {
+        height: 200px;
+    }
+
+    .profile-row {
+        .profile-image {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+@include brk.mobile() {
+    .timeline {
+        height: 150px;
+    }
+
+    .profile-row {
+        .profile-image {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

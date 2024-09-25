@@ -1,0 +1,27 @@
+@use "environments" as env;
+
+@mixin desktop {
+    @media (min-width: #{env.$mini-desktop-width + 1}) {
+        @content;
+    }
+}
+@mixin mini-desktop {
+    @media (max-width: env.$mini-desktop-width) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: env.$tablet-width) {
+        @content;
+    }
+}
+@mixin mini-tablet {
+    @media (max-width: env.$mini-tablet-width) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: env.$mobile-width) {
+        @content;
+    }
+}

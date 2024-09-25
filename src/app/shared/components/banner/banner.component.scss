@@ -1,0 +1,82 @@
+@use "../../../../../public/scss/environments" as env;
+@use "../../../../../public/scss/breakpoints" as brk;
+
+:host {
+    display: block;
+    background-color: rgba(5, 49, 81, 0.9);
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+}
+header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: env.$section-width;
+    margin: 0 auto;
+    height: 100%;
+}
+.profile-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    --heading-margin-bottom: 0;
+    --heading-line-height: 1;
+    --heading-color: #e4c656;
+
+    img {
+        width: 120px;
+        height: 120px;
+        border: 3px solid #e4c656;
+        border-radius: 50%;
+    }
+}
+.menu-container {
+    margin-left: auto;
+    position: relative;
+    padding-right: 16px;
+    margin-bottom: 12px;
+    color: #e4c656;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 28px;
+        background-color: #e1e1e1;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .phone-number {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 24px;
+        cursor: pointer;
+    }
+}

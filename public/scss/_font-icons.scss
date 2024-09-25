@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'font-icon';
+  src: url('../fonts/icomoon.ttf?ugf0tb') format('truetype'),
+    url('../fonts/icomoon.woff?ugf0tb') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'font-icon' !important;
+  font-size: var(--font-icon-font-size, 15px);
+  speak: never;
+  font-style: normal;
+  font-weight: inherit;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: var(--font-icon-display, block);
+  margin: var(--font-icon-margin, auto);
+  color: var(--font-icon-color, #606060);
+}
+
+.icon-play-button-1:before {
+  content: "\e900"
+}
+
+.icon-left-01:before {
+  content: "\e901"
+}
+
+.icon-up-01:before {
+  content: "\e902"
+}
+
+.icon-right-01:before {
+  content: "\e903"
+}
+
+.icon-sort:before {
+  content: "\e904"
+}
+
+.icon-save-f:before {
+  content: "\e905"
+}
+
+.icon-save:before {
+  content: "\e906"
+}
+
+.icon-phone:before {
+  content: "\e907"
+}
+
+.icon-down-01:before {
+  content: "\e903"
+}
+
+.icon-engine:before {
+  content: "\e926"
+}
+
+.icon-sitting-01:before {
+  content: "\e927"
+}
+
+.icon-more:before {
+  content: "\e908"
+}
+
+.icon-doors-01:before {
+  content: "\e928"
+}
+
+.icon-meter-01:before {
+  content: "\e909"
+}
+
+.icon-messenger-01:before {
+  content: "\e910"
+}
+
+.icon-location:before {
+  content: "\e90b"
+}
+
+.icon-fb:before {
+  content: "\e90d"
+}
+
+.icon-insta:before {
+  content: "\e90c"
+}
+
+.icon-email-01:before {
+  content: "\e90e"
+}
+
+.icon-wa-01:before {
+  content: "\e90f"
+}
+
+.icon-apps:before {
+  content: "\e911"
+}
+
+.icon-fuel2:before {
+  content: "\e912"
+}
+
+.icon-seat:before {
+  content: "\e913"
+}
+
+.icon-drop:before {
+  content: "\e914"
+}
+
+.icon-wheel:before {
+  content: "\e915"
+}
+
+.icon-trans:before {
+  content: "\e916"
+}
+
+.icon-car:before {
+  content: "\e917"
+}
+
+.icon-x:before {
+  content: "\e918"
+}
+
+.icon-tiktok-vs-01:before {
+  content: "\e919"
+}
+
+.icon-youtube:before {
+  content: "\e91a"
+}
+
+.icon-stock-number-01:before {
+  content: "\e91b"
+}
+
+.icon-vin-01:before {
+  content: "\e91c"
+}
+
+.icon-play-outline-01:before {
+  content: "\e91e"
+}
+
+.icon-test-drive-01:before {
+  content: "\e925"
+}
+
+.icon-finance-01:before {
+  content: "\e920"
+}
+
+.icon-book-appointment-01:before {
+  content: "\e924"
+}
+
+.icon-contact-01:before {
+  content: "\e923"
+}
