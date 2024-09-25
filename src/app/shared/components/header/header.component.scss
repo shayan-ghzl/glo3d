@@ -22,7 +22,7 @@
 }
 section {
     position: relative;
-    width: env.$section-width;
+    width: var(--section-width, env.$section-width);
     margin: 0 auto;
     height: 144px;
 
@@ -96,38 +96,36 @@ section {
     }
 }
 // --------------------------------
-
-@include brk.mini-desktop() {
-    .timeline {
-        height: 300px;
-    }
-}
-@include brk.tablet() {
-    .timeline {
-        height: 250px;
-    }
-}
-@include brk.mini-tablet() {
-    .timeline {
-        height: 200px;
-    }
-
-    .profile-row {
-        .profile-image {
-            width: 200px;
-            height: 200px;
-        }
-    }
-}
 @include brk.mobile() {
     .timeline {
         height: 150px;
     }
-
     .profile-row {
-        .profile-image {
-            width: 150px;
-            height: 150px;
-        }
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .profile-row .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-row .title {
+        --heading-1-font-size: 24px;
+    }
+    .profile-row .subtitle {
+        --heading-3-font-size: 18px;
+    }
+    .second-row .location {
+        font-size: 18px;
+        gap: 6px;
+        --font-icon-font-size: 18px;
+    }
+    section {
+        height: 320px;
+    }
+    section .inner-content {
+        top: -30%;
+    }
+    .bio {
+        margin-top: 16px;
     }
 }

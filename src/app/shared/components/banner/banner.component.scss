@@ -80,3 +80,9 @@ header {
         cursor: pointer;
     }
 }
+// --------------------------------
+@include brk.mobile() {
+    .menu-container {
+        display: none;
+    }
+}

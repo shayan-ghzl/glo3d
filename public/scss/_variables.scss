@@ -41,3 +41,11 @@
         --spacing-#{$name}: #{$value};
     }
 }
+
+:root {
+    --section-width: #{env.$section-width};
+
+    @media (max-width: env.$mobile-width) {
+        --section-width: calc(100% - 32px);
+    }
+}
